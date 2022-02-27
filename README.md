@@ -1,6 +1,6 @@
-# Azure DevOps Labs - GitHub Actions with Terraform
+GitHub Actions with Terraform
 
-Howdy there! These are the demo files to accompany the [Azure DevOps Lab video Validating Terraform Code with GitHub Actions.] This demo includes the following:
+This demo includes the following:
 
 * Terraform code to deploy an instance of App Services on Microsoft Azure
 * GitHub Actions to manage the deployment of Terraform code
@@ -13,8 +13,6 @@ If you'd like to follow along you'll need the following:
 * An Azure storage account and container
   * Instructions included below to create the storage account
 * A GitHub account and a forked instance of this repository
-* The drive to be awesome!
-  * Oh wait, you already ARE **awesome**! Well done.
 
 ## Creating the Azure AD Service Principal and Storage Account
 
@@ -22,7 +20,7 @@ Terraform needs credentials to create something on Azure for you. When you're ru
 
 Terraform also needs to store its state data somewhere. By default it does this on your local system, which is fine when your local system is persistent. The hosted runners for GitHub are ephemeral, so kiss that state data goodbye! Instead, we are going to store our state data persistently on an Azure storage account. Since we already have a service principal, we might as well use that for authentication and authorization on the storage account too!
 
-We could configure all of this manually, but that is BORING. And inconsistent, and inefficient, and look I just don't wanna. Let's use Terraform instead!
+We could configure all of this manually, but that is inconsistent and inefficient. Let's use Terraform instead!
 
 The code in the `remote_setup` directory will create the following for you:
 
