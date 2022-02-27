@@ -38,7 +38,7 @@ export GITHUB_TOKEN=PAT_TOKEN_VALUE
 
 # Log into Azure and select a subscription where you will deploy resources
 az login
-az account set -s SUBSCRIPTION_NAME
+az account set --subscription <SUBSCRIPTION_ID>
 
 # Go into the remote setup directory
 cd remote_setup
