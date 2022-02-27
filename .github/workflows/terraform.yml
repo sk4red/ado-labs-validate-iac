@@ -1,7 +1,19 @@
 name: 'Terraform'
 
-on: [push, pull_request]
+on:
 
+  push:
+    branches: [ main ]
+    paths-ignore: 
+      - '**.md'
+
+  pull_request:
+    paths-ignore: 
+      - '**.md'
+      
+  workflow_dispatch:
+
+ 
 env:
   TF_LOG: INFO
 
