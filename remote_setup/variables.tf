@@ -3,15 +3,15 @@
 #############################################################################
 
 variable "location" {
-  description = "(Optional) Region where the Azure resources will be created. Defaults to East US."
+  description = "(Optional) Region where the Azure resources will be created. Defaults to UK South."
   type        = string
-  default     = "eastus"
+  default     = "uksouth"
 }
 
 variable "naming_prefix" {
-  description = "(Optional) Naming prefix used for resources. Defaults to adolabs."
+  description = "(Optional) Naming prefix used for resources. Defaults to tfgithub."
   type        = string
-  default     = "adolabs"
+  default     = "tfgithub"
 }
 
 variable "github_repository" {
