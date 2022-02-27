@@ -44,8 +44,8 @@ resource "azurerm_app_service" "app_service" {
   https_only          = true
 
   source_control {
-    repo_url           = "https://github.com/ned1313/nodejs-docs-hello-world"
-    branch             = "main"
+    repo_url           = "https://github.com/Azure-Samples/nodejs-docs-hello-world.git"
+    branch             = "master"
     manual_integration = true
     use_mercurial      = false
   }
